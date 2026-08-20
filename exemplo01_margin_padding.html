@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exercício - Margin e Padding</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f6f8;
+			margin: 0;
+			padding: 24px;
+			color: #1f2937;
+		}
+
+		h1 {
+			text-align: center;
+			margin-bottom: 24px;
+		}
+
+		.area-exemplo {
+			max-width: 800px;
+			margin: 0 auto;
+			background-color: #ffffff;
+			border: 2px solid #cbd5e1;
+			padding: 20px;
+		}
+
+		.bloco {
+			background-color: #dbeafe;
+			border: 2px solid #2563eb;
+			margin: 20px 0;
+			padding: 20px;
+		}
+
+		.conteudo {
+			background-color: #fef3c7;
+			border: 2px dashed #d97706;
+			padding: 10px;
+		}
+
+		.legenda {
+			margin-top: 24px;
+			background-color: #ecfeff;
+			border-left: 5px solid #0891b2;
+			padding: 12px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Exercício: Diferença entre Margin e Padding</h1>
+
+	<section class="area-exemplo">
+		<p>
+			Observe o bloco abaixo. Ele possui <strong>margin</strong> e <strong>padding</strong>
+			para você comparar os espaços.
+		</p>
+
+		<div class="bloco">
+			<div class="conteudo">
+				Este texto está dentro da área de <strong>padding</strong>.<br>
+				O espaço entre a borda azul e esta caixa amarela é o <strong>padding</strong> do bloco.
+			</div>
+		</div>
+
+		<p>
+			O espaço entre este bloco azul e os outros elementos da página é a
+			<strong>margin</strong>.
+		</p>
+
+		<div class="legenda">
+			<strong>Resumo didático:</strong><br>
+			<strong>Padding</strong> = espaço interno (da borda para dentro).<br>
+			<strong>Margin</strong> = espaço externo (da borda para fora).
+		</div>
+	</section>
+</body>
+</html>

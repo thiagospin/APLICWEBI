@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    #quadro {
+        margin-top: 100px;
+        margin-left: 400px;
+        margin-right: 400px;
+        background-color: burlywood;
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .divcampos {
+        padding: 10px;
+    }
+
+    .inputs {
+        width: 250px;
+        border-radius: 5px;
+        border: 0px;
+        height: 30px;
+    }
+
+    .rotulos {
+        display: inline-block;
+        width: 100px;
+    }
+
+    body, option, select {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+    }
+
+</style>
+<body>
+    
+    <div id="quadro">
+        <h3>Realizar Login no Sistema</h3>
+        <div class="divcampos">
+            <label class="rotulos">usuário</label>
+            <input class="inputs" type="email">
+        </div>
+
+        <div class="divcampos">
+            <label class="rotulos">senha</label>
+            <input class="inputs" type="password">
+        </div class="campos">
+
+        <div class="divcampos">
+            <select name="opcoes" class="inputs">
+                <option value="1">Administrador</option>
+                <option value="2">Vendas</option>
+                <option value="3">Gerente</option>
+            </select>
+        </div>
+
+        <div class="campos">
+            <button class="rotulos" >Entrar</button>
+        </div>
+    </div>
+</body>
+</html>
