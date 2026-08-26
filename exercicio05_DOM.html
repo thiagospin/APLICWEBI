@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Document Objetct Model</title>
+</head>
+<body>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+
+    <button onclick="mostrarNome()">Mostrar nome</button>
+    
+    <button onclick="limparDados()">Limpar dados</button>
+
+    <p id="mensagem"></p>
+
+    <script>
+        
+        function mostrarNome() {
+            
+            let nome = document.getElementById("nome").value;
+            document.getElementById("mensagem").innerHTML = `Olá, ${nome}!`;
+        }
+
+        function limparDados() {
+
+            document.getElementById("nome").value = "";
+            document.getElementById("mensagem").innerHTML = "";
+        }
+
+    </script>
+</body>
+</html>
