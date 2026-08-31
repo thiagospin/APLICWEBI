@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando estilo com DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 24px;
+        }
+
+        button {
+            margin-right: 8px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        .destaque {
+            background-color: #fff3b0;
+            border: 2px solid #f4a261;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Bem-vindo ao exercicio DOM</h1>
+    <p id="texto">Clique no botao para mudar meu estilo.</p>
+
+    <button id="btnCor" onclick="alterarCor()">Mudar cor do titulo</button>
+    <button id="btnClasse" onclick="destacar()">Destacar paragrafo</button>
+
+
+    <br>
+
+    <p>Alterar a cor do backgroud a partir do combo</p>
+    <label>Selecione a cor</label>
+    <select id="optCor" onchange="alterarCorOpcoes()">
+        <option value="green">Verde</option>
+        <option value="red">Vermelho</option>
+        <option value="yellow">Amarelo</option>
+        <option value="blue">Azul</option>
+        <option value="pink">Rosa</option>
+    </select>
+
+    <script>
+        const titulo = document.getElementById("titulo");
+        const texto = document.getElementById("texto");
+        const btnCor = document.getElementById("btnCor");
+        const btnClasse = document.getElementById("btnClasse");
+
+        function alterarCor() {
+            titulo.style.color = "green";
+        }
+        
+        function destacar() {
+            texto.classList.add("destaque");
+        }
+
+        function alterarCorOpcoes() {
+            var corSelecionada = document.getElementById("optCor").value
+            titulo.style.backgroundColor = corSelecionada
+        }
+        
+    </script>
+</body>
+</html>
